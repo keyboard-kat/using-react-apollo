@@ -1,31 +1,30 @@
 import React from "react";
+import { makeStyles } from '@material-ui/core/styles';
+
+import Logo from "./Logo.jsx";
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
 import Menu from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
-import MoreIcon from '@material-ui/icons/MoreVert';
-import Drawer from '@material-ui/core/Drawer';
-import Button from '@material-ui/core/Button';
+
+// import Typography from '@material-ui/core/Typography';
+// import SearchIcon from '@material-ui/icons/Search';
+// import MoreIcon from '@material-ui/icons/MoreVert';
+// import Drawer from '@material-ui/core/Drawer';
+// import Button from '@material-ui/core/Button';
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
+    flexGrow: 0,
   },
   menuButton: {
     marginRight: theme.spacing(2),
   },
   toolbar: {
-    minHeight: 128,
+    minHeight: 20,
     alignItems: 'flex-start',
     paddingTop: theme.spacing(1),
     paddingBottom: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-    alignSelf: 'flex-end',
-  },
+  }
 }));
 
 
@@ -33,8 +32,6 @@ const useStyles = makeStyles((theme) => ({
 const LandingPage = () => {
     const classes = useStyles();
     return (
-
-
       <div className={classes.root}>
         <AppBar position="static">
           <Toolbar className={classes.toolbar}>
@@ -46,20 +43,11 @@ const LandingPage = () => {
             >
               <Menu />
             </IconButton>
-            <Typography className={classes.title} variant="h5" noWrap>
-              Material-UI
-          </Typography>
-            <IconButton aria-label="search" color="inherit">
-              <SearchIcon />
-            </IconButton>
-            <IconButton aria-label="display more actions" edge="end" color="inherit">
-              <MoreIcon />
+            <IconButton>
+              <Logo/>
             </IconButton>
           </Toolbar>
         </AppBar>
-))}
-
-    
       </div>
     );
   }

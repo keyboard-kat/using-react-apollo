@@ -1,25 +1,18 @@
 {
   "devFiles": [
-<<<<<<< Updated upstream
     "static/runtime/react-refresh.js",
     "static/development/dll/dll_f9de5cbc314a1e41f91e.js",
     "static/development/dll/dll_f9de5cbc314a1e41f91e.js.map"
-=======
-    "static/runtime/react-refresh.js"
->>>>>>> Stashed changes
   ],
   "lowPriorityFiles": [
     "static/development/_buildManifest.js",
     "static/development/_ssgManifest.js"
   ],
   "pages": {
-<<<<<<< Updated upstream
     "/": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-=======
->>>>>>> Stashed changes
     "/_app": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
@@ -31,14 +24,7 @@
     "/_polyfills": [
       "static/runtime/polyfills.js"
     ],
-<<<<<<< Updated upstream
     "/index": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-=======
->>>>>>> Stashed changes
-    "/next/dist/pages/_error": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
